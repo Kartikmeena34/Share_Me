@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShareMe - Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom right, #f5f7fa, #c3cfe2);
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Header */
+header {
+    position: absolute;
+    top: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    color: #333;
+}
+
+/* Main Section */
+main {
+    text-align: center;
+    width: 90%;
+    max-width: 600px;
+}
+
+.container button {
+    font-size: 1.5rem;
+    padding: 15px 30px;
+    margin: 10px;
+    border: none;
+    border-radius: 8px;
+    background: #4a90e2;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.container button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.slogan {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Send Page */
+.upload-box {
+    background: white;
+    padding: 30px;
+    border: 2px dashed #4a90e2;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.upload-box p {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.upload-box span {
+    color: #4a90e2;
+    cursor: pointer;
+}
+
+.upload-box .unique-link {
+    margin-top: 15px;
+    font-size: 0.9rem;
+    color: #666;
+    text-align: center;
+}
+
+/* Receive Page */
+.receive-box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.receive-box input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.receive-box button {
+    padding: 10px;
+    font-size: 1.2rem;
+    background: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: not-allowed;
+}
+
+.receive-box button:enabled {
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.receive-box button:enabled:hover {
+    background: #357abd;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ShareMe</h1>
+    </header>
+    <main>
+        <div class="container">
+            <a href="/send/">Send</a>
+            <a href="/receive/">Receive</a>
+        </div>
+        <p class="slogan">Where sharing meets simplicity</p>
+    </main>
+</body>
+</html>
