@@ -78,11 +78,11 @@ WSGI_APPLICATION = 'shareme.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': name,
-        'USER': user,
-        'PASSWORD': password,
-        'HOST': host,
-        'PORT': port,
+        'NAME': 'shareme',
+        'USER': 'root',
+        'PASSWORD':'13102004',
+        'HOST': '127.0.0.1',
+        'PORT': '3306'
     }
 }
 
